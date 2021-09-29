@@ -1,0 +1,13 @@
+<form method="POST" style="margin-left: 25px; ">
+    {% csrf_token %}
+     <label for="time_frame">Test:</label>
+
+    <select name="time_frame" id="time_frame">
+      <option value="1month">1 month</option>
+      <option value="3month">3 month</option>
+      <option value="6month">6 month</option>
+      <option value="1year">1 year</option>
+      <option value="alltime">All time</option>
+    </select> <br>
+    <button type="submit" class="btn btn-secondary">Filter data</button>
+</form>	
